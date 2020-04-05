@@ -1,10 +1,12 @@
 package wd.passion.service.impl;
 
-import wd.passion.pojo.User;
-import wd.passion.mapper.UserMapper;
-import wd.passion.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+import wd.passion.mapper.UserMapper;
+import wd.passion.entity.User;
+import wd.passion.service.IUserService;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -17,4 +19,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
+    @Resource
+    private UserMapper userMapper;
+//    public List<User> list() {
+//        return userMapper.selectList(null);
+//    }
 }

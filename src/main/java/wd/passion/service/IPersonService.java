@@ -1,6 +1,6 @@
 package wd.passion.service;
 
-import wd.passion.entity.User;
+import wd.passion.entity.Person;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author WangDong
- * @since 2019-09-26
+ * @since 2019-10-03
  */
-public interface IUserService extends IService<User> {
+public interface IPersonService extends IService<Person> {
+
 
 }

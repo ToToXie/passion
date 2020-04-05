@@ -1,7 +1,7 @@
 package wd.passion.mapper;
 
+import wd.passion.entity.Person;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import wd.passion.entity.User;
 
 /**
  * <p>
@@ -9,8 +9,9 @@ import wd.passion.entity.User;
  * </p>
  *
  * @author WangDong
- * @since 2019-09-26
+ * @since 2019-10-03
  */
-public interface UserMapper extends BaseMapper<User> {
+
+public interface PersonMapper extends BaseMapper<Person> {
 
 }

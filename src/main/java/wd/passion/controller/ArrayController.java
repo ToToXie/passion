@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @program: passion
@@ -69,6 +70,12 @@ public class ArrayController {
     @PutMapping("putModelAttribute")
     public String putModelAttribute(@ModelAttribute int[] array){
         return Arrays.toString(array);
+    }
+    @ApiOperation(value = "Post-ModelAttribute-String[]",httpMethod = "PUT")
+    @PutMapping("putModelAttributeString")
+    public String putModelAttributeString(@RequestParam("array") List<String> array){
+
+        return array.toString();
     }
     
 }

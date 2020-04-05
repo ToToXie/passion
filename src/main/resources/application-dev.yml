@@ -4,3 +4,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  global-config:
+    db-config:
+      field-strategy: not_empty
+      id-type: auto
+      db-type: mysql
+    banner: false
