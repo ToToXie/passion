@@ -21,6 +21,7 @@ public class HelloController {
     @ApiOperation("Hello World")
     @GetMapping("/world")
     public String hello(){
+        System.out.println(HELLO_WORLD);
         return HELLO_WORLD;
     }
 }
